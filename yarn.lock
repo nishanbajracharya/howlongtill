@@ -3603,6 +3603,10 @@ object.values@^1.1.0:
     function-bind "^1.1.1"
     has "^1.0.3"
 
+observer@nishanbajracharya/observer:
+  version "1.0.0"
+  resolved "https://codeload.github.com/nishanbajracharya/observer/tar.gz/b3979a2266a6e27d0910ec123ff8eb94d79dfabb"
+
 on-finished@~2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/on-finished/-/on-finished-2.3.0.tgz#20f1336481b083cd75337992a16971aa2d906947"

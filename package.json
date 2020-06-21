@@ -26,5 +26,8 @@
   "devDependencies": {
     "gh-pages": "^3.1.0",
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "observer": "nishanbajracharya/observer"
   }
 }
