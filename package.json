@@ -28,6 +28,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "date-fns": "^2.14.0",
     "observer": "nishanbajracharya/observer"
   }
 }
