@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "predeploy": "rm -rf dist && parcel build src/index.html --public-url /howlongtill",
+    "build": "parcel build src/index.html --public-url /howlongtill",
+    "predeploy": "rm -rf dist && npm run build",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
