@@ -1,0 +1,31 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: #667eea;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh;
+}
+
+.content {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20vh;
+}
+
+.content .input {
+  width: 80%;
+  color: #fff;
+  padding: 1em;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+span.flatpickr-day, span.flatpickr-day.prevMonthDay, span.flatpickr-day.nextMonthDay {
+  border: none!important;
+}

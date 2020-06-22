@@ -14,6 +14,7 @@ flatpickr(input, {
   altFormat: 'F j, Y',
   dateFormat: 'Y-m-d',
   minDate: new Date(),
+  disableMobile: true,
 });
 
 input.oninput = (e) => {
