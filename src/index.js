@@ -9,13 +9,23 @@ const observer = new Observer();
 const input = document.getElementById('input');
 const result = document.getElementById('time');
 
-flatpickr(input, {
+const fp = flatpickr(input, {
   altInput: true,
   altFormat: 'F j, Y',
   dateFormat: 'Y-m-d',
   minDate: new Date(),
   disableMobile: true,
+  onOpen: function(dates, date, instance) {
+    instance.calendarContainer.classList.remove('animate');
+    instance.calendarContainer.style.opacity = '0';
+    setTimeout(() => {
+      instance.calendarContainer.style.left = '50%';
+      instance.calendarContainer.style.opacity = '1';
+    }, 0);
+  }
 });
+
+fp.calendarContainer.style.transform = 'translateX(-50%)';
 
 input.oninput = (e) => {
   observer.set(e.target.value);
